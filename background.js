@@ -11,7 +11,7 @@ chrome.runtime.onMessage.addListener(
                 const parser = document.createElement('a');
                 parser.href = sender.url;
                 console.log(parser.pathname)
-                const filename = `${parser.hostname}/${parser.pathname !== '/' ? parser.pathname.replaceAll('/', '') : 'root'}/${(new Date().getDate())}-${(new Date().getMonth() + 1)}-${(new Date().getFullYear())}---${(new Date().getHours())}-${(new Date().getMinutes())}-${(new Date().getSeconds())}.png`
+                const filename = `progress-capture/${parser.hostname}/${parser.pathname !== '/' ? parser.pathname.replaceAll('/', '') : 'root'}/${(new Date().getDate())}-${(new Date().getMonth() + 1)}-${(new Date().getFullYear())}---${(new Date().getHours())}-${(new Date().getMinutes())}-${(new Date().getSeconds())}.png`
                 console.log(filename)
 
                 chrome.downloads.onChanged.addListener(onChanged);
