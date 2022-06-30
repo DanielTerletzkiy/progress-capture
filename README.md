@@ -1,5 +1,4 @@
-## Hacktoberfest 2021 Project: Progress Capture
-
+# !This is an extension just for fun!
 **How it works:**
 
 Load a page and it will take a screenshot of current Tab,
